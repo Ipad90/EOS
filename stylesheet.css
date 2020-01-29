@@ -1,0 +1,407 @@
+body {
+	background-color: #111111;
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	background-color: #111111;
+}
+
+footer {
+	background-color: #222222;
+	bottom: 0;
+	padding: 5px 0px 5px 40px;
+	margin: 0;
+	position: justify;
+	width: 100%;
+}
+
+ul.a {
+	background-color: #111111;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+ul.b {
+	background-color: #222222;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	overflow: hidden;	
+}
+
+li {
+	float: left;
+}
+
+li a {
+	color: #DDDDDD;
+	font-family: Helvetica;
+	font-size: 10pt;
+	text-align: center;
+	text-decoration: none;
+	width: 120px;
+	padding: 14px 16px;
+	display: block;
+}
+
+li a:hover {
+	background-color: #111111;
+}
+
+li a.active {
+	background-color: #444444;
+}
+
+li a:hover.active {
+	background-color: #333333;
+}
+
+h1 {
+	color: #B28A00;
+	font-family: Adequate;
+	font-size: 25pt;
+	display: block;
+}
+
+h2 {
+	color: #FFFFFF;
+	font-family: Helvetica;
+	font-size: 30pt;
+	margin: 0px;
+	padding: 10px 0px 10px 40px;
+}
+
+h3 {
+	color: #FFFFFF;
+	font-family: Helvetica;
+	font-size: 30pt;
+	margin: 0px;
+	padding: 0px 40px 0px 0px;
+}
+
+h4 {
+	color: #FFFFFF;
+	font-family: Helvetica;
+	font-size: 24pt;
+}
+
+h5 {
+	color: #FFFFFF;
+	font-family: Helvetica;
+	font-size: 12pt;
+}
+
+p, a {
+	font-family: Helvetica;
+	font-size: 10pt;
+}
+
+p {
+	color: #DDDDDD;
+}
+
+a {
+	color: #B28A00;
+	text-decoration: none;
+}
+
+.active {
+	background-color: #222222;
+}
+
+.r_400 {
+	width: 400px;
+}
+
+.r_100 {
+	width: 100px;
+}
+
+input[type = text], input[type = password] {
+	background-color: #222222;
+	color: #777777;
+	text-align: center;
+	border: none;
+	height: 30px;
+	width: 300px;
+	margin: 5px 0 10px 0;
+}
+
+input[type = text]:focus, input[type = password]:focus {
+	outline: none;
+}
+
+input[type = submit] {
+	background-color: #222222;
+	color: #B28A00;
+	height: 30px;
+	width: 150px;
+	border: none;
+	margin: 5px 0px 0px 0px;
+}
+
+input[type = submit]:focus {
+	outline: none;
+}
+
+input[type = submit]:hover {
+	cursor: pointer;
+}
+
+.button_1 {
+	background-color: #222222;
+	color: #B28A00;
+	font-size: 10pt;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	border: none;
+	margin: 5px 0px 10px 0px;
+}
+
+.button_1:focus {
+	outline: none;
+}
+
+.button_1:hover {
+	cursor: pointer;
+}
+
+.custom-select {
+	height: 30px;
+	width: 150px;
+	position: relative;
+	font-family: Helvetica;
+	font-size: 10pt;
+}
+
+.custom-select select {
+	display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+	background-color: #222222;
+}
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+
+.select-items div,.select-selected {
+	color: #B28A00;
+	padding: 10px 15px;
+	border: 0px solid #222222;
+	cursor: pointer;
+	user-select: none;
+}
+
+/*style items (options):*/
+
+.select-items {
+	position: absolute;
+	background-color: #222222;
+	top: 100%;
+	left: 0;
+	right: 0;
+}
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover {
+	background-color: #111111;
+}
+
+.same-as-selected {
+	background-color: #444444;
+}
+
+.box, .floaty_box, .floaty_box_log, .floaty_box_reg, .profile_box {
+	background-color: #444444;
+	text-align: center;
+	padding: 0px;
+	border: 1px solid #444444;
+}
+
+.box {
+	width: 400px;
+	padding: 50px 10px 50px 10px;
+}
+
+.row {
+	height: 100%;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left_col {
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+.right_col {
+	height: 100%;
+	width: 50%;
+	float: left;
+
+}
+
+.card {
+	background-color: #333333;
+	padding: 20px;
+}
+
+.center_col {
+	margin: auto;
+	width: 50%;
+}
+
+.center_col_spec {
+	padding-top: 50px;
+	text-align: center;
+	margin: auto;
+	width: 50%;
+}	
+
+.error {
+	background-color: #333333;
+	text-align: center;
+	color: white;
+	width: 400px;
+	border: 1px solid #FF0000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.success {
+	color: #3c763d;
+	background: #dff0d8;
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
+
+.gap_20_h {
+	height: 20px;
+	width: 100%;
+}
+
+.gap_50_h {
+	height: 50px;
+	width: 100%;
+}
+
+.gap_100_h {
+	height: 100px;
+	width: 100%;
+}
+
+.gap_20_w {
+	height: 100%;
+	width: 20px;
+}
+
+.gap_50_w {
+	height: 100%;
+	width: 50px;
+}
+
+.gap_100_w {
+	height: 100%;
+	width: 100px;
+}
+
+.imageLineTop {
+	display: inline-block;
+	width: 100%;
+	height: 725px;
+	top: 60%;
+	left: auto%;
+	transform: translate(50%, 50%);
+}
+
+.imageLineBottom {
+	display: inline-block;
+	margin-top: 45px;
+	width: 100%;
+	height: 725px;
+	top: 60%;
+	left: 50%;
+	transform: translate(50%, 50%);
+}
+
+#img1, #img2, #img3, #img4{
+	height: 700px;
+	position: relative;
+}
+
+#fadeBox0 {
+	width: 478px;
+	height: 700px;
+	background-color: black;
+	opacity: 0.5;
+	left: 24%;
+	position: absolute;
+	display: none;
+}
+
+#fadeBox1 {
+	width: 478px;
+	height: 700px;
+	background-color: black;
+	opacity: 0.5;
+	right: 24%;
+	position: absolute;
+	display: none;
+}
+
+#fadeBox2 {
+	width: 478px;
+	height: 700px;
+	background-color: black;
+	opacity: 0.5;
+	left: 24%;
+	position: absolute;
+	display: none;
+}
+
+#fadeBox3 {
+	width: 478px;
+	height: 700px;
+	background-color: black;
+	opacity: 0.5;
+	right: 24%;
+	position: absolute;
+	display: none;
+}
